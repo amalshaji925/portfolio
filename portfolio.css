@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    scroll-behavior: smmooth;
+    scroll-behavior: smooth;
     font-family:'poppins';
 }
 :root{
@@ -109,7 +109,7 @@ section{
     font-size: 4rem;
 }
 .home-content p{
-    font-size: 1.5 rem;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.8;
 }
@@ -200,7 +200,7 @@ section{
     text-align: left;
 }
 .about-content p{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 .about-content .btn{
     margin: 3rem 0;
@@ -220,11 +220,57 @@ section{
     font-size: 7rem;
     margin: 5rem 0;
 }
-.services{
+.skills{
     background-color: var(--bg-color);
-    color: black;
+    color: white;
 }
-.services h2{
+.skills h2{
+    color: var(--text-color);
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+.skills-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 200px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+.skills-box:hover{
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+
+.skills-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.skills-info h4{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.services{
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+}
+.services h4{
     color: var(--text-color);
 }
 .services-container{
@@ -250,6 +296,7 @@ section{
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
+
 .services-info{
     display: flex;
     flex-direction: column;
@@ -265,14 +312,13 @@ section{
 }
 .services-info p{
     font-size: 1.4rem;
-    font-size: 600;
     line-height: 1.7;
 }
 .services-info i{
     font-size: 8rem;
 }
 .projects{
-    background-color: var(--second-bg-color);   
+    background-color: var(--bg-color);   
 }
 .projects-box{
     display: grid;
@@ -314,7 +360,7 @@ section{
     font-size: 1.6rem;
 }
 .contact{
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
 }
 .contact h2{
     margin-bottom: 3rem;
@@ -341,7 +387,7 @@ section{
     resize: none;
 }
 .footer{
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
     padding: 50px 0;
 }
 .footer .social-icons{
